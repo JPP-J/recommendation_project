@@ -1,7 +1,7 @@
 # Recommendation System Project
 
 This repo is home to the code that accompanies Jidapa's *Recommendation System Project* , which provides; 
-- python code for Recommendation System with
+- example python code for Recommendation System with
   - User-based CF recommendations
   - Item-based CF recommendations
   - User KNN recommendations
