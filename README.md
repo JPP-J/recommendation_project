@@ -8,5 +8,6 @@ This repo is home to the code that accompanies Jidapa's *Recommendation System P
   - Item KNN recommendations
   - metric measurement
 - [rapid miner report](https://drive.google.com/file/d/1hlpB4bdQijreTLOExpiLf-wY4wTw_MGs/view?usp=sharing) for Recommendation System on [rating dataset](https://drive.google.com/file/d/1tRgURjUZ4OSKKhAUSpA5anWs_ZzOQ6Nw/view?usp=sharing) and [movie dataset](https://drive.google.com/file/d/15tQrIEUNzLOBeLNeDihK20IbAgzjejay/view?usp=sharing) with:
-  - User KNN recommendations 
+  - User KNN recommendations
+  - metric measurement
 
