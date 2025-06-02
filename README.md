@@ -1,5 +1,9 @@
 # Recommendation System Project
 
+![Last Commit](https://img.shields.io/github/last-commit/JPP-J/recommendation_project?style=flat-square)
+![Python](https://img.shields.io/badge/Python-97.6%25-blue?style=flat-square)
+![Languages](https://img.shields.io/github/languages/count/JPP-J/recommendation_project?style=flat-square)
+
 This repo is home to the code that accompanies Jidapa's *Recommendation System Project* , which provides; 
 ## Recommendation System
 - Description: Recommendation System of book items for user - hand on python code demo in [main.py](https://github.com/JPP-J/recommendation_project/blob/66f94f0e9df30eb830b7e0587282452836fafe89/main.py) for Recommendation System with Collaborative Filtering (CF) on [book items rating dataset](https://drive.google.com/file/d/1HDPOyxM6cs1SDx4boqKGrRVQam1VEPfy/view?usp=drive_link) with
