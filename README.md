@@ -12,16 +12,16 @@ This repo is home to the code that accompanies Jidapa's *Recommendation System P
   - User KNN recommendations
   - Item KNN recommendations
 - Libraries Used:
-  - Data Analysis: pandas, NumPy
-  - Machine Learning: scikit-learn
+  - Data Analysis: `pandas`, `NumPy`
+  - Machine Learning: `scikit-learn`
   - Model Evaluation: precision@k
 - [Example result](Example_result.txt) demo result examples 
 
 ## Recommendation System with Spark MLlib
 - Description: Recommendation System of book items for user - improvment from above in case large dataset with this case have dataset around 5 million records so using spark to handle this problem, hand on python code demo in [main2.py](main2.py) for Recommendation System update
 - Libraries Used:
-  - Data Handling: Hadoop, pyspark  
-  - Machine Learning: pyspark (ALS model)
+  - Data Handling: `Hadoop`, `pyspark`  
+  - Machine Learning: `Apache Spark MLlib (ALS model)`
   - Model Evaluation: precision@k
 - [Example result](Example_result.txt) demo result examples 
  
