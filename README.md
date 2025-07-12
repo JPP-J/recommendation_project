@@ -25,20 +25,19 @@ Both systems generate top-N recommendations, evaluated via **precision@k** to me
 ### 🎢 Workflow
 
 1. **ETL** – Load & clean user-book interaction data (Approach 1: 113,518 entries → sampled to ~90,814 & Approach 2: ~ 5.9M records)
-2. **EDA** – Analyze rating distribution and user/item activity levels
-3. **Sparse Matrix Conversion** – Transform into CSR format for efficient similarity search
-4. **Modeling Approach 1 - [`main.py`](main.py)**  
+2. **Sparse Matrix Conversion** – Transform into CSR format for efficient similarity search
+3. **Modeling Approach 1 - [`main.py`](main.py)**  
    - User-based CF  
    - Item-based CF  
    - User KNN  
    - Item KNN
    - Libraries Used: `pandas`, `NumPy`, `scikit-learn`, `scipy`
-5. **Modeling Approach 2 - [`main2.py`](main2.py) using Spark**  
+4. **Modeling Approach 2 - [`main2.py`](main2.py) using Spark**  
    - ALS via Spark MLlib on ~6 million records from HDFS  
    - Parallelized training & evaluation
    - Libraries Used: `Hadoop`, `pyspark`, `Apache Spark MLlib (ALS model)`
-6. **Evaluation** – Use `precision@k` at k = 5, 10, 15
-7. **Result Comparison** – Analyze local vs. distributed system performance
+5. **Evaluation** – Use `precision@k` at k = 5, 10, 15
+6. **Result Comparison** – Analyze local vs. distributed system performance
 
 ### 🎯 Results
 - Demo example result: [Example output](Example_result.txt) 
