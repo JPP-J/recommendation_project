@@ -24,7 +24,7 @@ Both systems generate top-N recommendations, evaluated via **precision@k** to me
 
 ### 🎢 Workflow
 
-1. **ETL** – Load & clean user-book interaction data (Approach 1 113,518 entries → sampled to ~90,814 &  Approach 2 ~ 5.9M records)
+1. **ETL** – Load & clean user-book interaction data (Approach 1: 113,518 entries → sampled to ~90,814 & Approach 2: ~ 5.9M records)
 2. **EDA** – Analyze rating distribution and user/item activity levels
 3. **Sparse Matrix Conversion** – Transform into CSR format for efficient similarity search
 4. **Modeling Approach 1 - [`main.py`](main.py)**  
@@ -92,38 +92,9 @@ Both systems generate top-N recommendations, evaluated via **precision@k** to me
 | Performance at Scale    | Large dataset (>5M) caused memory issues                       | Solved using distributed Spark & Parquet            |
 | Model Interpretability  | ALS is less interpretable than similarity models               | Supplemented with KNN & CF for transparency         |
 
----
 
-
-
-
-## Recommendation System
-- **Description:**
-Recommendation System of book items for users – hands-on Python demo in [`main.py`](main.py) for Collaborative Filtering (CF) on a [book-ratings dataset](https://drive.google.com/file/d/1HDPOyxM6cs1SDx4boqKGrRVQam1VEPfy/view?usp=drive_link) featuring:  
-  - User-based CF recommendations
-  - Item-based CF recommendations
-  - User KNN recommendations
-  - Item KNN recommendations
-- Libraries Used:
-  - Data Analysis: `pandas`, `NumPy`
-  - Machine Learning: `scikit-learn`, `scipy`
-  - Model Evaluation: precision@k
-- [Example output](Example_result.txt) demo result examples 
-
-## Recommendation System with Spark MLlib
-- Description: Recommendation System of book items for user - improvment from above in case large dataset with this case have dataset around 5 million records so using spark to handle this problem, hand on python code demo in [main2.py](main2.py) for Recommendation System update
-- Libraries Used:
-  - Data Handling: `Hadoop`, `pyspark`  
-  - Machine Learning: `Apache Spark MLlib (ALS model)`
-  - Model Evaluation: precision@k
-- [Example output](Example_result.txt) demo result examples 
- 
 > Looking for a movie-based example? Check out the follow-up repo:  
 > 🎬 [**Recommendation System Project No.2**](https://github.com/JPP-J/reccomd_project2) – movie dataset + LLM integration for advanced user queries.
-
-
-
-
 
 ---
 
